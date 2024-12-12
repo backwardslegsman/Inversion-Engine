@@ -6,8 +6,8 @@ Because I'm using templates, and making header files with templates is a huge pa
 ## Why does your renderer just draw a hard coded triangle?
 Graphics programming is hard
 
-## TODO List
-# Renderer
+# TODO List
+## Renderer
 * TODO: Create a JSON file format that encode ALL of the data required to build a graphics pipeline
 * TODO: Implement helper functions for creating each of the structs used in pipeline creation from JSON
 * TODO: Create a .pak format that contains a JSON header detailing the offset and size into the file for resources
@@ -28,8 +28,8 @@ Graphics programming is hard
 * TODO: Probably refactor and unit test again
 * TODO: Start working on the VTT project!
 
-# Entity Component System
+## Entity Component System
 * TODO: Replace nested vectors with large, single vectors + indexing to avoid pinter invalidation when inner vectors are resized
 
-# Main
+## Main
 * Change the system execution logic to buffer changes, then apply them once all threads have completed. Right now the systems modify the components immediately, meaning they can't operate on the same data without serious race conditions or synchronization
