@@ -19,7 +19,6 @@ Graphics programming is hard
 * TODO: Bring it all together. A function that reads the .pak header, loads the vertex, texture, shader, and pipeline data. Then loads the asset data into memory and builds/caches the pipelines.
 * TODO: Create sync objects and build the draw_frame() function
 * TODO: Integrate Dear ImGUI and start messing around with moving/scaling things and moving the camera around
-*       This will require a lot of misc. functions to support, and may be implementable using my ECS. I'll probably write a basic object oriented engine for testing
 * TODO: REFACTOR! Break this massive class down into some smaller, specialized classes
 * TODO: Write unit tests for these smaller, specialized classes
 * TODO: Start messing around with shaders. Really beat the hell out of this by trying to load/unload various things, create/destroy/load pipelines, etc.
@@ -33,3 +32,4 @@ Graphics programming is hard
 
 ## Main
 * Change the system execution logic to buffer changes, then apply them once all threads have completed. Right now the systems modify the components immediately, meaning they can't operate on the same data without serious race conditions or synchronization
+* Figure out any changes needed in the mina loop for the updated render logic, including importing .pak assets.
